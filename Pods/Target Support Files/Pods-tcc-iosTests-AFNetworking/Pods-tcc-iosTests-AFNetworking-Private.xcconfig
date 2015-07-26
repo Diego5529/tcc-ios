@@ -1,0 +1,6 @@
+#include "Pods-tcc-iosTests-AFNetworking.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/AFNetworking" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/Devise" "${PODS_ROOT}/Headers/Public/Reachability" "${PODS_ROOT}/Headers/Public/UICKeyChainStore" "${PODS_ROOT}/Headers/Public/XLForm" "${PODS_ROOT}/Headers/Public/ngrvalidator" "${PODS_ROOT}/Headers/Public/ngrvalidator/NGRValidator"
+OTHER_LDFLAGS = ${PODS_TCC_IOSTESTS_AFNETWORKING_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES

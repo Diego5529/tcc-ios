@@ -1,0 +1,1 @@
+../../../Devise/Devise/DVSPasswordReminderFormViewController+Private.h

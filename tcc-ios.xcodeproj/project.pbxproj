@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3874774DFBA55A675755F7EE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 784D9C744891154066C0658B /* libPods.a */; };
 		CCFC85C21B55E22700052A52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFC85C11B55E22700052A52 /* main.m */; };
 		CCFC85C51B55E22700052A52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFC85C41B55E22700052A52 /* AppDelegate.m */; };
 		CCFC85C81B55E22700052A52 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFC85C71B55E22700052A52 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		784D9C744891154066C0658B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6515A1D07D3FA641AC5589 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CCFC85BC1B55E22700052A52 /* tcc-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tcc-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFC85C01B55E22700052A52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCFC85C11B55E22700052A52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		CCFC85D51B55E22800052A52 /* tcc-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tcc-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFC85DA1B55E22800052A52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCFC85DB1B55E22800052A52 /* tcc_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tcc_iosTests.m; sourceTree = "<group>"; };
+		D80EA61589BC951DE68B9CC0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3874774DFBA55A675755F7EE /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +65,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FE0D84369044EDCB60CE96A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				784D9C744891154066C0658B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CCFC85B31B55E22700052A52 = {
 			isa = PBXGroup;
 			children = (
 				CCFC85BE1B55E22700052A52 /* tcc-ios */,
 				CCFC85D81B55E22800052A52 /* tcc-iosTests */,
 				CCFC85BD1B55E22700052A52 /* Products */,
+				EB76C9ACA454DEB99EE47EF4 /* Pods */,
+				0FE0D84369044EDCB60CE96A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +134,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EB76C9ACA454DEB99EE47EF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D80EA61589BC951DE68B9CC0 /* Pods.debug.xcconfig */,
+				BA6515A1D07D3FA641AC5589 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCFC85DF1B55E22800052A52 /* Build configuration list for PBXNativeTarget "tcc-ios" */;
 			buildPhases = (
+				CD8DA2F9C0638EF152BB8CF1 /* Check Pods Manifest.lock */,
 				CCFC85B81B55E22700052A52 /* Sources */,
 				CCFC85B91B55E22700052A52 /* Frameworks */,
 				CCFC85BA1B55E22700052A52 /* Resources */,
+				045AA39597AC0888BE2D993E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +239,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		045AA39597AC0888BE2D993E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD8DA2F9C0638EF152BB8CF1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CCFC85B81B55E22700052A52 /* Sources */ = {
@@ -347,6 +406,7 @@
 		};
 		CCFC85E01B55E22800052A52 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D80EA61589BC951DE68B9CC0 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "tcc-ios/Info.plist";
@@ -359,6 +419,7 @@
 		};
 		CCFC85E11B55E22800052A52 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA6515A1D07D3FA641AC5589 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "tcc-ios/Info.plist";
@@ -422,6 +483,7 @@
 				CCFC85E11B55E22800052A52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CCFC85E21B55E22800052A52 /* Build configuration list for PBXNativeTarget "tcc-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +492,7 @@
 				CCFC85E41B55E22800052A52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

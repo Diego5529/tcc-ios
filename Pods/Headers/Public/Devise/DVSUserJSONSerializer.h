@@ -1,0 +1,1 @@
+../../../Devise/Devise/DVSUserJSONSerializer.h

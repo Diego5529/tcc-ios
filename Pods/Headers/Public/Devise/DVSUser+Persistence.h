@@ -1,0 +1,1 @@
+../../../Devise/Devise/DVSUser+Persistence.h

@@ -1,0 +1,1 @@
+PODS_TCC_IOSTESTS_XLFORM_OTHER_LDFLAGS = -framework "CoreGraphics" -framework "Foundation" -framework "UIKit"

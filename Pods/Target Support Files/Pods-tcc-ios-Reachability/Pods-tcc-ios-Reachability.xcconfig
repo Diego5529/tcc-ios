@@ -1,0 +1,1 @@
+PODS_TCC_IOS_REACHABILITY_OTHER_LDFLAGS = -framework "SystemConfiguration"
