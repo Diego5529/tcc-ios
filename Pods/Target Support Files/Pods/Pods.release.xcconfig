@@ -1,7 +1,0 @@
-FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/Devise/Frameworks" "$(PODS_ROOT)/Devise/Frameworks"
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/Devise" "${PODS_ROOT}/Headers/Public/Reachability" "${PODS_ROOT}/Headers/Public/UICKeyChainStore" "${PODS_ROOT}/Headers/Public/XLForm" "${PODS_ROOT}/Headers/Public/ngrvalidator" "${PODS_ROOT}/Headers/Public/ngrvalidator/NGRValidator"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/Devise" -isystem "${PODS_ROOT}/Headers/Public/Reachability" -isystem "${PODS_ROOT}/Headers/Public/UICKeyChainStore" -isystem "${PODS_ROOT}/Headers/Public/XLForm" -isystem "${PODS_ROOT}/Headers/Public/ngrvalidator" -isystem "${PODS_ROOT}/Headers/Public/ngrvalidator/NGRValidator"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-AFNetworking" -l"Pods-Devise" -l"Pods-Reachability" -l"Pods-UICKeyChainStore" -l"Pods-XLForm" -l"Pods-ngrvalidator" -framework "AddressBook" -framework "AssetsLibrary" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreMotion" -framework "CoreText" -framework "Foundation" -framework "GoogleOpenSource" -framework "GooglePlus" -framework "MediaPlayer" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
-OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
-PODS_ROOT = ${SRCROOT}/Pods

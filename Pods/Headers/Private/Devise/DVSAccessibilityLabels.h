@@ -1,1 +1,0 @@
-../../../Devise/Devise/DVSAccessibilityLabels.h
