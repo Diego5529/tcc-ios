@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3874774DFBA55A675755F7EE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 784D9C744891154066C0658B /* libPods.a */; };
+		CC769FEB1B6AF6C200A5A1CE /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC769FE91B6AF6C200A5A1CE /* MenuViewController.m */; };
+		CC769FEC1B6AF6C300A5A1CE /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC769FEA1B6AF6C200A5A1CE /* MenuViewController.xib */; };
 		CCFC85C21B55E22700052A52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFC85C11B55E22700052A52 /* main.m */; };
 		CCFC85C51B55E22700052A52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFC85C41B55E22700052A52 /* AppDelegate.m */; };
 		CCFC85C81B55E22700052A52 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFC85C71B55E22700052A52 /* ViewController.m */; };
@@ -30,6 +32,9 @@
 /* Begin PBXFileReference section */
 		784D9C744891154066C0658B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6515A1D07D3FA641AC5589 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CC769FE81B6AF6C200A5A1CE /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		CC769FE91B6AF6C200A5A1CE /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		CC769FEA1B6AF6C200A5A1CE /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		CCFC85BC1B55E22700052A52 /* tcc-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tcc-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFC85C01B55E22700052A52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCFC85C11B55E22700052A52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -104,6 +109,9 @@
 				CCFC85CC1B55E22700052A52 /* Images.xcassets */,
 				CCFC85CE1B55E22700052A52 /* LaunchScreen.xib */,
 				CCFC85BF1B55E22700052A52 /* Supporting Files */,
+				CC769FE81B6AF6C200A5A1CE /* MenuViewController.h */,
+				CC769FE91B6AF6C200A5A1CE /* MenuViewController.m */,
+				CC769FEA1B6AF6C200A5A1CE /* MenuViewController.xib */,
 			);
 			path = "tcc-ios";
 			sourceTree = "<group>";
@@ -228,6 +236,7 @@
 				CCFC85CB1B55E22700052A52 /* Main.storyboard in Resources */,
 				CCFC85D01B55E22700052A52 /* LaunchScreen.xib in Resources */,
 				CCFC85CD1B55E22700052A52 /* Images.xcassets in Resources */,
+				CC769FEC1B6AF6C300A5A1CE /* MenuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +290,7 @@
 				CCFC85C81B55E22700052A52 /* ViewController.m in Sources */,
 				CCFC85C51B55E22700052A52 /* AppDelegate.m in Sources */,
 				CCFC85C21B55E22700052A52 /* main.m in Sources */,
+				CC769FEB1B6AF6C200A5A1CE /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
