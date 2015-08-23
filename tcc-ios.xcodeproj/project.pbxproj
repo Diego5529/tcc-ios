@@ -10,6 +10,7 @@
 		3874774DFBA55A675755F7EE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 784D9C744891154066C0658B /* libPods.a */; };
 		CC769FEB1B6AF6C200A5A1CE /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC769FE91B6AF6C200A5A1CE /* MenuViewController.m */; };
 		CC769FEC1B6AF6C300A5A1CE /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC769FEA1B6AF6C200A5A1CE /* MenuViewController.xib */; };
+		CC99AE311B8A6E8A00DBB30E /* Model1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC99AE2F1B8A6E8A00DBB30E /* Model1.xcdatamodeld */; };
 		CCFC85C21B55E22700052A52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFC85C11B55E22700052A52 /* main.m */; };
 		CCFC85C51B55E22700052A52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFC85C41B55E22700052A52 /* AppDelegate.m */; };
 		CCFC85C81B55E22700052A52 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFC85C71B55E22700052A52 /* ViewController.m */; };
@@ -35,6 +36,7 @@
 		CC769FE81B6AF6C200A5A1CE /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		CC769FE91B6AF6C200A5A1CE /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		CC769FEA1B6AF6C200A5A1CE /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		CC99AE301B8A6E8A00DBB30E /* Model1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model1.xcdatamodel; sourceTree = "<group>"; };
 		CCFC85BC1B55E22700052A52 /* tcc-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tcc-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFC85C01B55E22700052A52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCFC85C11B55E22700052A52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				CC769FE81B6AF6C200A5A1CE /* MenuViewController.h */,
 				CC769FE91B6AF6C200A5A1CE /* MenuViewController.m */,
 				CC769FEA1B6AF6C200A5A1CE /* MenuViewController.xib */,
+				CC99AE2F1B8A6E8A00DBB30E /* Model1.xcdatamodeld */,
 			);
 			path = "tcc-ios";
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				CCFC85C51B55E22700052A52 /* AppDelegate.m in Sources */,
 				CCFC85C21B55E22700052A52 /* main.m in Sources */,
 				CC769FEB1B6AF6C200A5A1CE /* MenuViewController.m in Sources */,
+				CC99AE311B8A6E8A00DBB30E /* Model1.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +509,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CC99AE2F1B8A6E8A00DBB30E /* Model1.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CC99AE301B8A6E8A00DBB30E /* Model1.xcdatamodel */,
+			);
+			currentVersion = CC99AE301B8A6E8A00DBB30E /* Model1.xcdatamodel */;
+			path = Model1.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CCFC85B41B55E22700052A52 /* Project object */;
 }
