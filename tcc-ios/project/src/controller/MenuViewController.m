@@ -33,6 +33,7 @@
     textFieldModel.text = @"/schools";
     textFieldUsername.text = @"teste@gmail.com";
     textFieldPassword.text = @"123456";
+    [textFieldParam1 setPlaceholder:NSLocalizedString(@"TEST", nil)];
 }
 
 - (void)didReceiveMemoryWarning {
