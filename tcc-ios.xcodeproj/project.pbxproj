@@ -11,6 +11,17 @@
 		CC769FEB1B6AF6C200A5A1CE /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC769FE91B6AF6C200A5A1CE /* MenuViewController.m */; };
 		CC769FEC1B6AF6C300A5A1CE /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC769FEA1B6AF6C200A5A1CE /* MenuViewController.xib */; };
 		CC99AE311B8A6E8A00DBB30E /* Model1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC99AE2F1B8A6E8A00DBB30E /* Model1.xcdatamodeld */; };
+		CC99AE341B8A801100DBB30E /* EventGuest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC99AE331B8A801100DBB30E /* EventGuest.m */; };
+		CC99AE371B8A801100DBB30E /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CC99AE361B8A801100DBB30E /* User.m */; };
+		CC99AE3A1B8A801100DBB30E /* State.m in Sources */ = {isa = PBXBuildFile; fileRef = CC99AE391B8A801100DBB30E /* State.m */; };
+		CC99AE3D1B8A801100DBB30E /* UserType.m in Sources */ = {isa = PBXBuildFile; fileRef = CC99AE3C1B8A801100DBB30E /* UserType.m */; };
+		CC99AE401B8A801100DBB30E /* EventCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = CC99AE3F1B8A801100DBB30E /* EventCategory.m */; };
+		CC99AE431B8A801100DBB30E /* EventType.m in Sources */ = {isa = PBXBuildFile; fileRef = CC99AE421B8A801100DBB30E /* EventType.m */; };
+		CC99AE461B8A801100DBB30E /* GuestType.m in Sources */ = {isa = PBXBuildFile; fileRef = CC99AE451B8A801100DBB30E /* GuestType.m */; };
+		CC99AE491B8A801100DBB30E /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = CC99AE481B8A801100DBB30E /* Event.m */; };
+		CC99AE4C1B8A801100DBB30E /* Guest.m in Sources */ = {isa = PBXBuildFile; fileRef = CC99AE4B1B8A801100DBB30E /* Guest.m */; };
+		CC99AE4F1B8A801100DBB30E /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = CC99AE4E1B8A801100DBB30E /* City.m */; };
+		CC99AE521B8A801100DBB30E /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = CC99AE511B8A801100DBB30E /* Country.m */; };
 		CCFC85C21B55E22700052A52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFC85C11B55E22700052A52 /* main.m */; };
 		CCFC85C51B55E22700052A52 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFC85C41B55E22700052A52 /* AppDelegate.m */; };
 		CCFC85C81B55E22700052A52 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFC85C71B55E22700052A52 /* ViewController.m */; };
@@ -37,6 +48,28 @@
 		CC769FE91B6AF6C200A5A1CE /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		CC769FEA1B6AF6C200A5A1CE /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		CC99AE301B8A6E8A00DBB30E /* Model1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model1.xcdatamodel; sourceTree = "<group>"; };
+		CC99AE321B8A801100DBB30E /* EventGuest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventGuest.h; path = "tcc-ios/src/model/EventGuest.h"; sourceTree = "<group>"; };
+		CC99AE331B8A801100DBB30E /* EventGuest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventGuest.m; path = "tcc-ios/src/model/EventGuest.m"; sourceTree = "<group>"; };
+		CC99AE351B8A801100DBB30E /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = "tcc-ios/src/model/User.h"; sourceTree = "<group>"; };
+		CC99AE361B8A801100DBB30E /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = "tcc-ios/src/model/User.m"; sourceTree = "<group>"; };
+		CC99AE381B8A801100DBB30E /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = State.h; path = "tcc-ios/src/model/State.h"; sourceTree = "<group>"; };
+		CC99AE391B8A801100DBB30E /* State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = State.m; path = "tcc-ios/src/model/State.m"; sourceTree = "<group>"; };
+		CC99AE3B1B8A801100DBB30E /* UserType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserType.h; path = "tcc-ios/src/model/UserType.h"; sourceTree = "<group>"; };
+		CC99AE3C1B8A801100DBB30E /* UserType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserType.m; path = "tcc-ios/src/model/UserType.m"; sourceTree = "<group>"; };
+		CC99AE3E1B8A801100DBB30E /* EventCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventCategory.h; path = "tcc-ios/src/model/EventCategory.h"; sourceTree = "<group>"; };
+		CC99AE3F1B8A801100DBB30E /* EventCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventCategory.m; path = "tcc-ios/src/model/EventCategory.m"; sourceTree = "<group>"; };
+		CC99AE411B8A801100DBB30E /* EventType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventType.h; path = "tcc-ios/src/model/EventType.h"; sourceTree = "<group>"; };
+		CC99AE421B8A801100DBB30E /* EventType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventType.m; path = "tcc-ios/src/model/EventType.m"; sourceTree = "<group>"; };
+		CC99AE441B8A801100DBB30E /* GuestType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuestType.h; path = "tcc-ios/src/model/GuestType.h"; sourceTree = "<group>"; };
+		CC99AE451B8A801100DBB30E /* GuestType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuestType.m; path = "tcc-ios/src/model/GuestType.m"; sourceTree = "<group>"; };
+		CC99AE471B8A801100DBB30E /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Event.h; path = "tcc-ios/src/model/Event.h"; sourceTree = "<group>"; };
+		CC99AE481B8A801100DBB30E /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Event.m; path = "tcc-ios/src/model/Event.m"; sourceTree = "<group>"; };
+		CC99AE4A1B8A801100DBB30E /* Guest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Guest.h; path = "tcc-ios/src/model/Guest.h"; sourceTree = "<group>"; };
+		CC99AE4B1B8A801100DBB30E /* Guest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Guest.m; path = "tcc-ios/src/model/Guest.m"; sourceTree = "<group>"; };
+		CC99AE4D1B8A801100DBB30E /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = City.h; path = "tcc-ios/src/model/City.h"; sourceTree = "<group>"; };
+		CC99AE4E1B8A801100DBB30E /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = City.m; path = "tcc-ios/src/model/City.m"; sourceTree = "<group>"; };
+		CC99AE501B8A801100DBB30E /* Country.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Country.h; path = "tcc-ios/src/model/Country.h"; sourceTree = "<group>"; };
+		CC99AE511B8A801100DBB30E /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Country.m; path = "tcc-ios/src/model/Country.m"; sourceTree = "<group>"; };
 		CCFC85BC1B55E22700052A52 /* tcc-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tcc-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFC85C01B55E22700052A52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCFC85C11B55E22700052A52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,6 +116,28 @@
 		CCFC85B31B55E22700052A52 = {
 			isa = PBXGroup;
 			children = (
+				CC99AE501B8A801100DBB30E /* Country.h */,
+				CC99AE511B8A801100DBB30E /* Country.m */,
+				CC99AE4D1B8A801100DBB30E /* City.h */,
+				CC99AE4E1B8A801100DBB30E /* City.m */,
+				CC99AE4A1B8A801100DBB30E /* Guest.h */,
+				CC99AE4B1B8A801100DBB30E /* Guest.m */,
+				CC99AE471B8A801100DBB30E /* Event.h */,
+				CC99AE481B8A801100DBB30E /* Event.m */,
+				CC99AE441B8A801100DBB30E /* GuestType.h */,
+				CC99AE451B8A801100DBB30E /* GuestType.m */,
+				CC99AE411B8A801100DBB30E /* EventType.h */,
+				CC99AE421B8A801100DBB30E /* EventType.m */,
+				CC99AE3E1B8A801100DBB30E /* EventCategory.h */,
+				CC99AE3F1B8A801100DBB30E /* EventCategory.m */,
+				CC99AE3B1B8A801100DBB30E /* UserType.h */,
+				CC99AE3C1B8A801100DBB30E /* UserType.m */,
+				CC99AE381B8A801100DBB30E /* State.h */,
+				CC99AE391B8A801100DBB30E /* State.m */,
+				CC99AE351B8A801100DBB30E /* User.h */,
+				CC99AE361B8A801100DBB30E /* User.m */,
+				CC99AE321B8A801100DBB30E /* EventGuest.h */,
+				CC99AE331B8A801100DBB30E /* EventGuest.m */,
 				CCFC85BE1B55E22700052A52 /* tcc-ios */,
 				CCFC85D81B55E22800052A52 /* tcc-iosTests */,
 				CCFC85BD1B55E22700052A52 /* Products */,
@@ -290,11 +345,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC99AE401B8A801100DBB30E /* EventCategory.m in Sources */,
 				CCFC85C81B55E22700052A52 /* ViewController.m in Sources */,
+				CC99AE4C1B8A801100DBB30E /* Guest.m in Sources */,
+				CC99AE371B8A801100DBB30E /* User.m in Sources */,
+				CC99AE491B8A801100DBB30E /* Event.m in Sources */,
+				CC99AE4F1B8A801100DBB30E /* City.m in Sources */,
 				CCFC85C51B55E22700052A52 /* AppDelegate.m in Sources */,
+				CC99AE3A1B8A801100DBB30E /* State.m in Sources */,
+				CC99AE521B8A801100DBB30E /* Country.m in Sources */,
 				CCFC85C21B55E22700052A52 /* main.m in Sources */,
 				CC769FEB1B6AF6C200A5A1CE /* MenuViewController.m in Sources */,
+				CC99AE3D1B8A801100DBB30E /* UserType.m in Sources */,
+				CC99AE461B8A801100DBB30E /* GuestType.m in Sources */,
+				CC99AE431B8A801100DBB30E /* EventType.m in Sources */,
 				CC99AE311B8A6E8A00DBB30E /* Model1.xcdatamodeld in Sources */,
+				CC99AE341B8A801100DBB30E /* EventGuest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

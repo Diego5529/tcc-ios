@@ -1,67 +1,87 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14F27" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="City" syncable="YES">
+    <entity name="City" representedClassName="City" syncable="YES">
         <attribute name="city_id" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
         <attribute name="id_state" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="belongs_to_state" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="State" inverseName="has_many_city" inverseEntity="State" syncable="YES"/>
         <relationship name="has_many_event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="belongs_to_city" inverseEntity="Event" syncable="YES"/>
     </entity>
-    <entity name="Country" syncable="YES">
+    <entity name="Company" syncable="YES">
+        <attribute name="company_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="has_many_event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="belongs_to_company" inverseEntity="Event" syncable="YES"/>
+        <relationship name="has_many_user_company" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserCompany" inverseName="has_many_company" inverseEntity="UserCompany" syncable="YES"/>
+    </entity>
+    <entity name="Country" representedClassName="Country" syncable="YES">
         <attribute name="country_id" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
         <relationship name="has_many_state" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="State" inverseName="belongs_to_country" inverseEntity="State" syncable="YES"/>
     </entity>
-    <entity name="Event" syncable="YES">
+    <entity name="Event" representedClassName="Event" syncable="YES">
         <attribute name="event_id" attributeType="Integer 16" defaultValueString="0" indexed="YES" syncable="YES"/>
         <relationship name="belongs_to_city" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="City" inverseName="has_many_event" inverseEntity="City" syncable="YES"/>
-        <relationship name="belongs_to_event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EventType" inverseName="has_many_events" inverseEntity="EventType" syncable="YES"/>
-        <relationship name="belongs_to_event_category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EventCategory" inverseName="has_many_event" inverseEntity="EventCategory" syncable="YES"/>
-        <relationship name="has_many_event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Guest" inverseName="belongs_to_event" inverseEntity="Guest" syncable="YES"/>
+        <relationship name="belongs_to_company" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Company" inverseName="has_many_event" inverseEntity="Company" syncable="YES"/>
+        <relationship name="belongs_to_event_category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EventCategory" inverseName="has_many_events" inverseEntity="EventCategory" syncable="YES"/>
+        <relationship name="belongs_to_event_type" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EventType" inverseName="has_many_events" inverseEntity="EventType" syncable="YES"/>
+        <relationship name="has_many_invitations" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Invitation" inverseName="belongs_to_event" inverseEntity="Invitation" syncable="YES"/>
+        <relationship name="has_many_security" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Security" inverseName="belongs_to_event" inverseEntity="Security" syncable="YES"/>
     </entity>
-    <entity name="EventCategory" syncable="YES">
+    <entity name="EventCategory" representedClassName="EventCategory" syncable="YES">
         <attribute name="event_category_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="has_many_event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="belongs_to_event_category" inverseEntity="Event" syncable="YES"/>
+        <relationship name="has_many_events" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="belongs_to_event_category" inverseEntity="Event" syncable="YES"/>
     </entity>
-    <entity name="EventGuest" syncable="YES">
-        <attribute name="event_guest_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-    </entity>
-    <entity name="EventType" syncable="YES">
+    <entity name="EventType" representedClassName="EventType" syncable="YES">
         <attribute name="event_type_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="has_many_events" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="belongs_to_event" inverseEntity="Event" syncable="YES"/>
+        <relationship name="has_many_events" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="belongs_to_event_type" inverseEntity="Event" syncable="YES"/>
     </entity>
-    <entity name="Guest" syncable="YES">
+    <entity name="Invitation" representedClassName="Guest" syncable="YES">
         <attribute name="guest_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="belongs_to_event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="has_many_event" inverseEntity="Event" syncable="YES"/>
-        <relationship name="belongs_to_guest_type" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GuestType" inverseName="has_many_guest" inverseEntity="GuestType" syncable="YES"/>
+        <relationship name="belongs_to_event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="has_many_invitations" inverseEntity="Event" syncable="YES"/>
+        <relationship name="belongs_to_invitation_type" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="InvitationType" inverseName="has_many_invitations" inverseEntity="InvitationType" syncable="YES"/>
+        <relationship name="belongs_to_user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="has_many_invitation" inverseEntity="User" syncable="YES"/>
     </entity>
-    <entity name="GuestType" syncable="YES">
+    <entity name="InvitationType" representedClassName="GuestType" syncable="YES">
         <attribute name="guest_type_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="has_many_guest" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Guest" inverseName="belongs_to_guest_type" inverseEntity="Guest" syncable="YES"/>
+        <relationship name="has_many_invitations" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Invitation" inverseName="belongs_to_invitation_type" inverseEntity="Invitation" syncable="YES"/>
     </entity>
-    <entity name="State" syncable="YES">
+    <entity name="Security" syncable="YES">
+        <attribute name="security_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="belongs_to_event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Event" inverseName="has_many_security" inverseEntity="Event" syncable="YES"/>
+        <relationship name="belongs_to_user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="has_many_security" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="State" representedClassName="State" syncable="YES">
         <attribute name="id_country" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="state_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="belongs_to_country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Country" inverseName="has_many_state" inverseEntity="Country" syncable="YES"/>
         <relationship name="has_many_city" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="City" inverseName="belongs_to_state" inverseEntity="City" syncable="YES"/>
     </entity>
-    <entity name="User" syncable="YES">
+    <entity name="User" representedClassName="User" syncable="YES">
         <attribute name="user_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="belongs_to_users_type" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserType" inverseName="has_many_users" inverseEntity="UserType" syncable="YES"/>
+        <relationship name="has_many_invitation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Invitation" inverseName="belongs_to_user" inverseEntity="Invitation" syncable="YES"/>
+        <relationship name="has_many_security" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Security" inverseName="belongs_to_user" inverseEntity="Security" syncable="YES"/>
+        <relationship name="has_many_users_company" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserCompany" inverseName="has_many_user" inverseEntity="UserCompany" syncable="YES"/>
     </entity>
-    <entity name="UserType" syncable="YES">
+    <entity name="UserCompany" syncable="YES">
+        <attribute name="user_company_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="belongs_user_type" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserType" inverseName="has_many_users_company" inverseEntity="UserType" syncable="YES"/>
+        <relationship name="has_many_company" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Company" inverseName="has_many_user_company" inverseEntity="Company" syncable="YES"/>
+        <relationship name="has_many_user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="has_many_users_company" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="UserType" representedClassName="UserType" syncable="YES">
         <attribute name="user_type_id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <relationship name="has_many_users" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="belongs_to_users_type" inverseEntity="User" syncable="YES"/>
+        <relationship name="has_many_users_company" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserCompany" inverseName="belongs_user_type" inverseEntity="UserCompany" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Event" positionX="-45" positionY="119" width="128" height="118"/>
-        <element name="EventGuest" positionX="-297" positionY="261" width="128" height="58"/>
-        <element name="City" positionX="124" positionY="-31" width="128" height="103"/>
-        <element name="State" positionX="-45" positionY="-189" width="128" height="103"/>
+        <element name="City" positionX="126" positionY="-99" width="128" height="103"/>
+        <element name="Company" positionX="-74" positionY="-405" width="128" height="88"/>
         <element name="Country" positionX="124" positionY="-216" width="128" height="73"/>
-        <element name="Guest" positionX="-290" positionY="135" width="128" height="88"/>
-        <element name="GuestType" positionX="-288" positionY="26" width="128" height="73"/>
-        <element name="User" positionX="-270" positionY="-216" width="128" height="73"/>
-        <element name="UserType" positionX="-272" positionY="-100" width="128" height="73"/>
-        <element name="EventType" positionX="160" positionY="143" width="128" height="73"/>
-        <element name="EventCategory" positionX="-29" positionY="267" width="128" height="75"/>
+        <element name="Event" positionX="-81" positionY="-72" width="128" height="148"/>
+        <element name="EventCategory" positionX="133" positionY="126" width="128" height="73"/>
+        <element name="EventType" positionX="133" positionY="36" width="128" height="73"/>
+        <element name="Invitation" positionX="-360" positionY="90" width="128" height="105"/>
+        <element name="InvitationType" positionX="-522" positionY="135" width="128" height="75"/>
+        <element name="Security" positionX="-236" positionY="-144" width="128" height="90"/>
+        <element name="State" positionX="295" positionY="-171" width="128" height="103"/>
+        <element name="User" positionX="-405" positionY="-207" width="128" height="103"/>
+        <element name="UserType" positionX="-515" positionY="-297" width="128" height="73"/>
+        <element name="UserCompany" positionX="-290" positionY="-495" width="128" height="103"/>
     </elements>
 </model>
