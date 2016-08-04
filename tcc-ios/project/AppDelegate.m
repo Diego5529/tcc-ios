@@ -6,9 +6,14 @@
 
 @implementation AppDelegate
 
+@synthesize database;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //cria o banco de dados
+    database = [Database alloc];
+    [database createAndOpenDatabase:@"projectDB.db"];
+    
     return YES;
 }
 
